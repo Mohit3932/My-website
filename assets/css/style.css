@@ -459,7 +459,7 @@ footer a i b{
 }
 
 .player {
-    width: 17.15em;
+    width: 18.15em;
     display: flex;
     overflow: hidden;
     font-size: 1.22em;
@@ -1523,5 +1523,22 @@ span#banner_socials i {
 
 .social-line {
     left: -24px;
+}
+
+.up_img img {
+    width: 700px;
+    /* left: -41px; */
+}
+
+.player {
+    width: 18.15em;
+}
+
+#singer_title {
+
+    padding-left: 2rem;
+    font-family: 'Mohit_font';
+    font-size: 33px;
+    
 }
 }
