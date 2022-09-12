@@ -122,7 +122,7 @@ button#socials i {
 
 
 #main-one .navbar-expand-lg {
-   background: rgba(0, 0, 0, 0.5) !important;
+    background: rgb(255 255 255 / 53%) !important;
     /* color: #fff !important; */
     top: 40px;
     position: sticky;
@@ -130,13 +130,13 @@ button#socials i {
 }
 
 #main-one a.nav-link {
-    color: #ffffff !important;
+    color: #000000 !important;
     font-size: 14px;
     padding-right: 30px;
     font-family: system-ui;
     font-style: italic;
+    font-weight: 700;
 }
-
 
 #main-one a.nav-link:hover{
     color: #ffc107 !important;
@@ -1460,7 +1460,10 @@ hr {
 
 @media screen and (max-width: 1200px) {
 .contact-wrapper {
-    display: block;
+    display: flex;
+    position: relative;
+    top: -100%;
+    
 }
 
 .gmail,.phone,.place {
@@ -1545,13 +1548,13 @@ span#banner_socials i {
     
 }
 #main-one .navbar-expand-lg {
-    background: rgb(84 59 65 / 51%) !important;
+    background: rgb(255 255 255 / 86%) !important;
     padding: 25px;
-   /* height: 75px;*/
+    /* height: 75px; */
 }
 
 #main-one a.nav-link {
-    color: #ffffff !important;
+    color: #000000 !important;
     font-weight: 700;
     font-size: 26px;
     padding: 20px;
@@ -1571,16 +1574,16 @@ span#banner_socials i {
 #Navbar_Search .search-bar {
     height: 60px;
     width: 500px;
-    background: #fff;
+    background: #000;
 }
 
-#Navbar_Search .input{
-    background-color: #fff;
+#Navbar_Search .input {
+    background-color: #000;
 }
 
 #Navbar_Search .search-btn {
-    height: 70px;
-    min-width: 70px;
+    height: 74px;
+    min-width: 74px;
 }
 
 #colorNav > ul > li > a {
@@ -1591,7 +1594,10 @@ span#banner_socials i {
 #Navbar_Search .icon-18 {
     width: 33px;
     height: 33px;
-    /* color: #000; */
+}
+
+.section-header {
+    margin-top: 64rem;
 }
 
 }
