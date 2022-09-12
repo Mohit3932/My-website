@@ -1541,4 +1541,13 @@ span#banner_socials i {
     font-size: 33px;
     
 }
+#main-one .navbar-expand-lg {
+    background: rgb(255 255 255 / 41%) !important;
+  
+}
+
+#main-one a.nav-link {
+    color: #000000 !important;
+    font-weight: 700;
+}
 }
