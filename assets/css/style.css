@@ -1551,3 +1551,9 @@ span#banner_socials i {
     font-weight: 700;
 }
 }
+
+
+.navbar-toggler:focus {
+    outline: 0;
+    box-shadow: none;
+}
