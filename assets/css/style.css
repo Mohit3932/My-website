@@ -1,7 +1,9 @@
 
 /* css */
 
-
+/*body.loading_mode {
+    background: #161e2a;
+}*/
 @font-face {
    
     font-family: "Mohit_font";
@@ -28,6 +30,7 @@ div#logo img {
     background-color: #543b41;
     padding: 20px;
     height: 790px;
+   /* margin-left: -52px;*/
 }
 
 #logo h2 {
@@ -172,7 +175,7 @@ div#Navbar_Search {
     margin-top: -14rem;
     color: #fff;
     padding-left: 4rem;
-    font-family: 'Guru';
+ font-family: 'Mohit_font';
     font-size: 32px;
 }
 #Navbar_Search .input:not(:placeholder-shown) + .label{
@@ -859,9 +862,8 @@ span#banner_socials i:hover{
     position: fixed;
     margin-top: 10rem;
     z-index: 99;
-    left: 0;
+   left: 0;
 }
-
 #banner_socials {
     left: 47%;
     position: relative;
@@ -1491,9 +1493,10 @@ hr {
 }
 
 
-#logo h2{
+#logo h2 {
     text-align: center;
-    font-size: 115px;
+    font-size: 140px;
+    margin-top: -13rem;
 }
 
 #logo p{
@@ -1542,18 +1545,77 @@ span#banner_socials i {
     
 }
 #main-one .navbar-expand-lg {
-    background: rgb(255 255 255 / 41%) !important;
-  
+    background: rgb(84 59 65 / 51%) !important;
+   /* height: 75px;*/
 }
 
 #main-one a.nav-link {
-    color: #000000 !important;
+    color: #ffffff !important;
     font-weight: 700;
+    font-size: 26px;
+    padding: 20px;
 }
+#colorNav li ul {
+   
+   width: 200px;
+    margin-left: -106px;
+
+}
+
+#colorNav li ul li a {
+    font-size: 20px;
+   
+}
+
+#Navbar_Search .search-bar {
+    height: 60px;
+    width: 500px;
+    background: #fff;
+}
+
+#Navbar_Search .input{
+    background-color: #fff;
+}
+
+#Navbar_Search .search-btn {
+    height: 70px;
+    min-width: 70px;
+}
+
+#colorNav > ul > li > a {
+    font-size: 54px;
+    padding: 22px;
+}
+
 }
 
 
 .navbar-toggler:focus {
     outline: 0;
     box-shadow: none;
+}
+
+
+.navbar-light .navbar-toggler-icon {
+    background: none;
+}
+
+
+span.navbar-toggler-icon i {
+    font-size: 45px;
+    color: #ffc107;
+}
+
+
+
+
+
+
+@media screen and (min-device-width: 320px) and (max-device-width: 567px){
+
+#logo p {
+    text-align: center;
+    font-size: 40px !important;
+}
+
 }
