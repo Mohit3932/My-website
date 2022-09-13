@@ -127,7 +127,7 @@ button#socials i {
     /* color: #fff !important; */
     top: 40px;
     position: sticky;
-    z-index: 99999;
+    z-index: 9999;
 }
 #main-one a.nav-link {
     color: #fff !important;
@@ -862,7 +862,7 @@ span#banner_socials i:hover{
     top: 0;
     position: fixed;
     margin-top: 10rem;
-    z-index: 99999;
+    z-index: 9999;
    left: 0;
 }
 #banner_socials {
@@ -997,66 +997,6 @@ section.about_us span i {
 }
 
 
-/*gallery*/
-
-.img_card_gallery form {
-    text-align: center;
-    position: absolute;
-    margin-top: 16rem;
-    top: 0;
-    left: 45%;
-    z-index: 99;
-}
-
-.img_card_gallery input[type="radio"] {
-  display: none;
-}
-
-.img_card_gallery input[type="radio"]:checked ~ label {
-  transform: skew(20deg) rotate(20deg);
-}
-
-.img_card_gallery input[type="radio"]:checked + label {
-  margin: 0 50px;
-  transform: none;
-}
-
-.img_card_gallery label {
-  position: realtive;
-  margin: 0 -35px;
-  display: inline-block;
-  width: 150px;
-  height: 200px;
-  line-height: 200px;
-  color: #ddd;
-  font-size: 2em;
-  border-radius: 5px;
-  box-shadow: 0 10px 6px -6px #777;
-  transform: skew(-20deg) rotate(-20deg);
-  transition: .3s;
-}
-
-.img_card_gallery label:nth-of-type(1) {
-  background: #1abc9c;
-}
-
-.img_card_gallery label:nth-of-type(2) {
-  background: #3498db;
-}
-
-.img_card_gallery label:nth-of-type(3) {
-  background: #e67e22;
-}
-
-.img_card_gallery label:nth-of-type(4) {
-  background: #9b59b6;
-}
-
-.img_card_gallery label:nth-of-type(5) {
-  background: #f1c40f;
-}
-
-
 .overlay{
     width: inherit;
     position: absolute;
@@ -1066,57 +1006,43 @@ section.about_us span i {
 }
 
 
-.img_card_gallery img {
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    border: 2px solid #fff;
-    cursor: pointer;
-}
 
-
-.music_notes img {
-    width: 80px;
-    position: absolute;
-    filter: invert(1);
-    margin: 73px;
-    z-index: 999;
-    /* height: 100vh; */
-}
-
-.img_card_gallery #top-to{
-    margin-top: 32rem;
-}
 
 /*media query*/
 
 
+@media (max-width: 769px){
+
+
+
+}
+
+
 @media (max-width: 992px){
+
+    .lb-data .lb-close {
+    top: 20px !important;
+}
+
+.right_bar.gallery-back {
+    height: 900px !important;
+}
+.img_card_gallery #top-to {
+    margin-top: 28rem;
+    top: auto;
+    left: auto;
+}
+
+
+
 section.about_us {
     margin-top: -24rem;
     top: auto;
 }
 
 
-.img_card_gallery form{
-     margin-top: -32rem;
-    top: auto;
-    left: auto;
-}
-
-.img_card_gallery #top-to{
-    margin-top: -16rem;
-    top: auto;
-    left: auto;
-}
-
-/*.right_bar{
-    height: 100vh !important;
-}*/
-
-.overlay{
-    height: 100vh;
+.overlay {
+    height: 52vh;
 }
 
 }
@@ -1461,7 +1387,17 @@ hr {
 }
 
 
+@media screen and (min-device-width: 992px) and (max-device-width: 1300px){
+
+
+    .gallery img {
+    width: 192px !important;
+}
+}
+
 @media screen and (max-width: 1200px) {
+
+
 .contact-wrapper {
     display: flex;
     position: relative;
@@ -1669,6 +1605,18 @@ span.player__title.slider__title {
     
 }
 
+.gallery img {
+    width: 200px;
+   
+}
+
+.gallery {
+    top: 0 !important;
+    max-width: 90% !important;
+    margin-top: 60em !important;
+    left: 13% !important;
+}
+
 }
 
 
@@ -1697,6 +1645,35 @@ span.navbar-toggler-icon i {
 
 @media screen and (min-device-width: 320px) and (max-device-width: 567px){
 
+.gallery {
+    margin-top: 68em !important;
+}
+
+.gallery img {
+    width: 200px;
+   
+}
+
+.gallery {
+    display: inline-block;
+    grid-template-columns: min-content;
+    position: absolute;
+    grid-gap: 30px;
+    top: 0;
+    max-width: 90%;
+    margin-top: 60em;
+    bottom: 0;
+    left: 13%;
+}
+
+.img_card_gallery form {
+    margin-top: 11rem;
+    top: auto;
+    left: auto;
+}
+
+
+
 #logo p {
     text-align: center;
     font-size: 40px !important;
@@ -1722,4 +1699,43 @@ div#logo img {
     height: 850px;
 }
 
+.contact-wrapper {
+    top: -110%;
+}
+
+.img_card_gallery #top-to {
+    margin-top: 28rem;
+    top: auto;
+    left: auto;
+}
+
+}
+
+
+
+
+/*gallery part*/
+
+.gallery {
+    display: flow-root;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    position: absolute;
+    grid-gap: 30px;
+    top: 0;
+    max-width: 60%;
+    margin-top: 9rem;
+}
+
+.gallery img {
+    width: 260px;
+    border: 1px solid #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.lb-data .lb-close {
+    top: 0;
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
 }
