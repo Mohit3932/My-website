@@ -59,7 +59,8 @@ div#logo img {
 
 
 .right_bar{
-    background-color: #161e2a;
+    background-image: url('../media/24.jpg');
+    background-size: cover;
     height: 790px;
 }
 
@@ -122,15 +123,14 @@ button#socials i {
 
 
 #main-one .navbar-expand-lg {
-    background: rgb(255 255 255 / 53%) !important;
+    background: rgb(0 0 0 / 46%) !important;
     /* color: #fff !important; */
     top: 40px;
     position: sticky;
     z-index: 99999;
 }
-
 #main-one a.nav-link {
-    color: #000000 !important;
+    color: #fff !important;
     font-size: 14px;
     padding-right: 30px;
     font-family: system-ui;
@@ -175,8 +175,8 @@ div#Navbar_Search {
     margin-top: -14rem;
     color: #fff;
     padding-left: 4rem;
- font-family: 'Mohit_font';
-    font-size: 32px;
+   font-family: 'Mohit_font';
+    font-size: 40px;
 }
 #Navbar_Search .input:not(:placeholder-shown) + .label{
 
@@ -829,6 +829,7 @@ span#banner_socials i {
     transform: rotateZ(45deg);
     margin-top: 15px;
     background-color: #000;
+    color: #ffff;
 }
 
 span#banner_socials i:hover{
@@ -861,7 +862,7 @@ span#banner_socials i:hover{
     top: 0;
     position: fixed;
     margin-top: 10rem;
-    z-index: 99;
+    z-index: 99999;
    left: 0;
 }
 #banner_socials {
@@ -1129,6 +1130,8 @@ section.about_us {
     top: auto;
     left: auto;
 }
+
+
 
 .img_card_gallery form {
     left: auto;
@@ -1493,13 +1496,14 @@ hr {
     margin-left: auto;
     margin-right: auto;
     width: 30%;
+    top: 55%;
 }
 
 
 #logo h2 {
     text-align: center;
     font-size: 140px;
-    margin-top: -13rem;
+    margin-top: -18rem;
 }
 
 #logo p{
@@ -1544,17 +1548,17 @@ span#banner_socials i {
 
     padding-left: 2rem;
     font-family: 'Mohit_font';
-    font-size: 33px;
+    font-size: 70px;
     
 }
 #main-one .navbar-expand-lg {
-    background: rgb(255 255 255 / 86%) !important;
+    background: rgb(0 0 0 / 86%) !important;
     padding: 25px;
     /* height: 75px; */
 }
 
 #main-one a.nav-link {
-    color: #000000 !important;
+    color: #fff !important;
     font-weight: 700;
     font-size: 26px;
     padding: 20px;
@@ -1572,18 +1576,23 @@ span#banner_socials i {
 }
 
 #Navbar_Search .search-bar {
-    height: 60px;
-    width: 500px;
-    background: #000;
+    height: 90px;
+    padding: 30px;
+    border-radius: 0;
+    width: 100%;
+    font-size: 40px;
+    background: #fff;
 }
 
 #Navbar_Search .input {
-    background-color: #000;
+    background-color: #fff;
 }
 
 #Navbar_Search .search-btn {
-    height: 74px;
-    min-width: 74px;
+    height: 94px;
+    border-radius: 0;
+    min-width: 118px;
+    /* background: none; */
 }
 
 #colorNav > ul > li > a {
@@ -1600,7 +1609,69 @@ span#banner_socials i {
     margin-top: 64rem;
 }
 
+span.navbar-toggler-icon i {
+    font-size: 55px !important;
+    margin-top: -9px !important;
 }
+
+#colorNav li.green {
+    top: 20px;
+}
+
+#colorNav > ul {
+    padding: 0;
+}
+
+.player__playlist {
+    background: #000;
+}
+
+.player {
+    width: 37.15em;
+}
+
+.player {
+    left: 0%;
+    margin-top: -0.9rem;
+}
+
+#singer_title:after {
+    left: 44%;
+    margin-top: 8.7rem;
+    height: 143px;
+    border-right: 3px solid #000000;
+}
+
+.player__header{
+    background-color: #ffc107;
+    height: 8.85em;
+}
+
+.slider__name, .slider__title {
+    font-size: 35px;
+}
+
+span.player__title.slider__title {
+    font-size: 25px;
+}
+
+.player__img--absolute{
+    position: absolute;
+    top: 3em;
+}
+
+.progres {
+    height: 0.70em;
+}
+
+.player__song-time {
+    font-size: 20px;
+    
+}
+
+}
+
+
 
 
 .navbar-toggler:focus {
@@ -1629,6 +1700,19 @@ span.navbar-toggler-icon i {
 #logo p {
     text-align: center;
     font-size: 40px !important;
+}
+
+div#logo img {
+    width: 130px;
+}
+
+.social-line {
+    left: 15px;
+    top: 30px;
+}
+
+#logo {
+    padding-bottom: 100px;
 }
 
 }
