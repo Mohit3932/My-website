@@ -1,4 +1,10 @@
-
+*{
+    box-sizing: border-box;
+}
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+}
 /* css */
 
 /*body.loading_mode {
@@ -124,7 +130,6 @@ button#socials i {
 
 #main-one .navbar-expand-lg {
     background: rgb(0 0 0 / 46%) !important;
-    /* color: #fff !important; */
     top: 40px;
     position: sticky;
     z-index: 9999;
@@ -1917,3 +1922,53 @@ div#logo img {
 .bar:nth-child(8)  { left: 29px; animation-duration: 419ms; }
 .bar:nth-child(9)  { left: 33px; animation-duration: 487ms; }
 .bar:nth-child(10) { left: 37px; animation-duration: 442ms; }
+
+
+
+/* menu bars */
+
+
+
+.spinner {
+    height: 10px;
+    width: 76px;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+.spinner.middle ,
+.spinner.bottom{
+    margin-top: 3px;
+}
+
+
+.Togglebars {
+    height: 22px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+  input#manu-bars-main {
+   display: none;
+}
+
+
+#manu-bars-main:checked ~ .nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+    transform: translateX(0);
+}
+
+
+#manu-bars-main:checked ~ .Togglebars > .spinner.middle {
+    opacity: 0;
+}
+#manu-bars-main:checked ~ .Togglebars > .spinner.top {
+    transform: rotate(135deg);
+    margin-top: 25px;
+    background: #ffc107;
+}
+#manu-bars-main:checked ~ .Togglebars > .spinner.bottom {
+    transform: rotate(-135deg);
+    margin-top: -30px;
+    background: #ffc107;
+}
+
+
