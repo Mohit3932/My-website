@@ -1653,7 +1653,12 @@ span.navbar-toggler-icon i {
 
 
 
-@media screen and (min-device-width: 320px) and (max-device-width: 567px){
+@media screen and (min-device-width: 320px) and (max-device-width: 667px){
+
+    .bars {
+        left: 0;
+        top: 490px !important;
+    }
 
 
 .inner_img {
@@ -1972,3 +1977,22 @@ div#logo img {
 }
 
 
+
+@media screen and (min-device-width: 992px) and (max-device-width: 1400px){
+
+
+    .bars {
+        margin-left: 13rem !important;
+    }
+
+
+}
+
+@media (max-device-width: 991px){
+
+.bars {
+    left: 0;
+    top: 539px;
+}
+
+}
