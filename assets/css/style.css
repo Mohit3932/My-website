@@ -1933,7 +1933,7 @@ div#logo img {
     height: 10px;
     width: 76px;
     background-color: #fff;
-    transition: all 0.3s;
+    transition: all 0.5s;
 }
 .spinner.middle ,
 .spinner.bottom{
