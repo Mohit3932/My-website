@@ -148,9 +148,9 @@ button#socials i {
     transition: 0.7s;
 }
 
-div#Navbar_Search {
+/*div#Navbar_Search {
     margin-right: auto;
-}
+}*/
 
 /*search bar*/
 
@@ -166,13 +166,13 @@ div#Navbar_Search {
 }
 
 #Navbar_Search .input {
-  border: none;
-  height: 25px;
-  width: 150px;
-  color: #543b41;
-  font-size: 10px;
-  outline: none;
-  background: #0005;
+    border: none;
+    /* height: 25px; */
+    /* width: 150px; */
+    color: #543b41;
+    font-size: 10px;
+    outline: none;
+    background: #ffc107;
 }
 
 #singer_title {
@@ -351,7 +351,7 @@ div#Navbar_Search {
 #colorNav li.green {
     /* background-color: #795548; */
     color: #ffffff;
-    border: 1px solid #fff;
+    border: 2px solid #fff;
     border-radius: 50%;
 }
 
@@ -978,9 +978,12 @@ section.about_us .inner_img img {
 
 section.about_us {
     background: #0005;
-    padding: 45px;
-    top: 50%;
-  /*  margin-top: 16rem;*/
+    padding: 60px;
+    top: 73%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    /* margin-top: 16rem; */
     position: absolute;
     color: #fff;
 }
@@ -1001,12 +1004,11 @@ section.about_us span i {
     margin: 0px 10px 0px -29px;
 }
 
-
-.overlay{
-    width: inherit;
+.overlay {
+    width: 100%;
     position: absolute;
     background: #0008;
-    height: 100vh;
+    height: 100%;
     z-index: 99;
 }
 
@@ -1046,9 +1048,7 @@ section.about_us {
 }
 
 
-.overlay {
-    height: 52vh;
-}
+
 
 }
 
@@ -1078,39 +1078,13 @@ section.about_us {
 }
 }
 
-/*@media (min-width: 400px){
-.img_card_gallery #top-to {
-    margin-top: -37rem;
-    top: auto;
-    left: auto;
-}
-
-.img_card_gallery form {
-    left: auto;
-    margin-top: -20rem;
-}
 
 
-.overlay {
-    height: 45vh !important;
-}
-.right_bar {
-    height: 45vh !important;
-}
-}*/
-
-
-/*contact us*/
-
-
-
-
-
-#contact {
+/*#contact {
   width: 100%;
   height: 100%;
 }
-
+*/
 .section-header {
     text-align: center;
     margin: 0 auto;
@@ -1120,8 +1094,8 @@ section.about_us {
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 6px;
-    position: absolute;
-    top: 0;
+    /*position: absolute;*/
+    /*top: 0;*/
     margin-top: 9rem;
     text-align: center;
     z-index: 99;
@@ -1131,12 +1105,9 @@ section.about_us {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
     margin: 0 auto;
     padding: 20px;
-    position: absolute;
-    max-width: 840px;
-    top: 0;
-    margin-top: 15rem;
     z-index: 999;
 }
 
@@ -1421,7 +1392,7 @@ hr {
 }
 
 
-@media screen and (min-device-width: 992px) and (max-device-width: 1170px){
+/*@media screen and (min-device-width: 992px) and (max-device-width: 1170px){
 
 
 .right_bar{
@@ -1430,7 +1401,7 @@ hr {
 
 
 }
-
+*/
 @media (max-width: 992px){
 #main-one #socials {
     display: block;
@@ -1546,9 +1517,7 @@ span#banner_socials i {
     height: 33px;
 }
 
-.section-header {
-    margin-top: 64rem;
-}
+
 
 span.navbar-toggler-icon i {
     font-size: 55px !important;
@@ -1610,17 +1579,8 @@ span.player__title.slider__title {
     
 }
 
-.gallery img {
-    width: 200px;
-   
-}
 
-.gallery {
-    top: 0 !important;
-    max-width: 90% !important;
-    margin-top: 60em !important;
-    left: 13% !important;
-}
+
 
 .lb-outerContainer {
     transform: translateY(100%) !important;
@@ -1655,6 +1615,11 @@ span.navbar-toggler-icon i {
 
 @media screen and (min-device-width: 320px) and (max-device-width: 667px){
 
+    .gallery {
+    width: 83% !important;
+    
+}
+
     .bars {
         left: 0;
         top: 490px !important;
@@ -1665,26 +1630,14 @@ span.navbar-toggler-icon i {
     padding-left: 35px;
 }
 
-.gallery {
-    margin-top: 68em !important;
-}
+
 
 .gallery img {
     width: 200px;
    
 }
 
-.gallery {
-    display: inline-block;
-    grid-template-columns: min-content;
-    position: absolute;
-    grid-gap: 30px;
-    top: 0;
-    max-width: 90%;
-    margin-top: 60em;
-    bottom: 0;
-    left: 13%;
-}
+
 
 .img_card_gallery form {
     margin-top: 11rem;
@@ -1741,13 +1694,15 @@ div#logo img {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     position: absolute;
     grid-gap: 30px;
-    top: 0;
-    max-width: 60%;
-    margin-top: 9rem;
+    top: 50%;
+    width: 70%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    
 }
 
 .gallery img {
-    width: 260px;
+    width: 218px;
     border: 1px solid #fff;
     padding: 10px;
     border-radius: 10px;
@@ -1995,4 +1950,159 @@ div#logo img {
     top: 539px;
 }
 
+}
+
+
+/* whats ap */
+
+.float{
+	position:fixed;
+	width:40px;
+	height:40px;
+	bottom:40px;
+	right:40px;
+	 background-color:#25d366; 
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index: 9999;
+    
+}
+
+.float:hover{
+	color:#FFF;
+	
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+i.fa.fa-whatsapp.my-float {
+    font-size: 25px;
+    line-height: 9px;
+    color: #fff;
+    padding-left: 2px;
+}
+
+i.fa.fa-whatsapp.my-float:hover{
+    font-size: 32px;
+    transition: 0.3s;
+    /*color: #25d366;*/
+    
+}
+
+
+
+
+
+
+/*search*/
+
+
+
+
+
+
+#search_nav form {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(-50%,-50%);
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: #ffc107;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 3px solid white;
+    padding: 5px;
+}
+
+#search_nav input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+
+#searching {
+    box-sizing: border-box;
+    padding: 12px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #07051a;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+
+#search_nav form:hover {
+    width: 247px;
+    cursor: pointer;
+    right: 0;
+}
+
+#search_nav form:hover input{
+    display: block;
+}
+
+#search_nav form:hover #searching{
+    background: #07051a;
+    color: white;
+}
+
+section.contact-us {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+
+
+/*artist*/
+section.music_artist {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+
+
+.artist_man img {
+    width: 150px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    cursor: pointer;
+}
+
+
+.artist_man {
+    width: 150px;
+    border-radius: 50% 50% 0% 0%;
+    margin-bottom: 30px;
+}
+
+.artist_man h6 {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 15px;
 }

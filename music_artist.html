@@ -9,11 +9,71 @@
      <link rel="icon" type="image/x-icon" href="../Mk-Sing/assets/media/icon.png">
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
+
+<style type="text/css">
+    
+
+    .bar{
+        background: #fff;
+    }
+
+.player {
+    width: 25.15em;
+    display: flex;
+    overflow: hidden;
+    font-size: 1.22em;
+    left: 73%;
+    flex-direction: column;
+    z-index: 9999 !important;
+    background-color: white;
+    height: var(--parent-height);
+    position: absolute;
+    margin-top: -25rem;
+    background: #543b41;
+    color: #fff;
+    height: 500px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.muzieknootjes {
+    display: block;
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    margin-top: -9rem;
+    min-width: 300px;
+    z-index: 99999;
+    border: 0px solid #fff;
+}
+
+button#socials i {
+    font-size: 40px;
+    color: white;
+}
+
+#main-one #socials {
+    border-radius: 6px;
+    border: none;
+    background: none;
+    width: 110px;
+    box-shadow: 0px 0px 3px 0px #fff;
+    font-weight: 700;
+    top: 50%;
+}
+body{
+    background: #d39e01;
+}
+
+
+
+</style>
+
     <body class="loading_mode">
 
 
         <div id="loading" style="position: fixed; z-index: 999999;">
-            <div id="loader" style="position: relative; background: #000;">
+        <!--     <div id="loader" style="position: relative; background: #000;">
 
             
                 <div class="loader">
@@ -24,13 +84,13 @@
                     <div class="bar5"></div>
                     <div class="bar6"></div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <!-- navbar -->
 
 
-
+  
         <div id="main-one">
             <div class="container-fluid">
                 <div class="row">
@@ -41,8 +101,8 @@
                                 
                                     <a href="index.html"><img src="assets\media\Logo3.png"></a>
 
-                                    <h2>Musical Mk</h2>
-                                    <p>Singing is the act of creating musical sounds with the voice...! Enjoy a collection of our concert snippets for me videos, Check out our youtube channel</p>
+                                    <h2>Music On</h2>
+                                   
                           <div class="bars bars2">
                                 <div class="bar"></div>
                                 <div class="bar"></div>
@@ -55,12 +115,12 @@
                                 <div class="bar"></div>
                                 <div class="bar"></div>
                             </div>
-                                   <a href="https://www.youtube.com/channel/UCGC3iir2VvHp7QquziBEnbw"> <button type="button" id="socials" class="btn btn-warning"><i class="fa fa-youtube-play" aria-hidden="true"></i></button></a>
+                                   <a href="https://www.youtube.com/channel/UCGC3iir2VvHp7QquziBEnbw"> <button type="button" id="socials" class="btn btn-warning"><i class="fa fa-music" aria-hidden="true"></i></button></a>
                                 </div>
                             </div>
 
-                            <div class="col-sm-12 col-md-12 col-lg-8 p-0">
-                                <div class="right_bar">
+                            <div class="col-sm-12 col-md-12 col-lg-8 p-0" style="position: relative;">
+                                <div class="right_bar" style=" background-image: url('assets/media/artist_back.png')">
                                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
                                         <div class="container-fluid">
                                             <a class="navbar-brand" href="#"></a>
@@ -147,8 +207,8 @@
                                             <div class="banner_img_content">
                                                 <div class="col-sm-12 col-lg-12 col-sm-6">
                                                     <div class="up_img">
-                                                        <img src="assets\media\banner2.webp" />
-                                                        <h1 id="singer_title">Best of Arijit Singh Songs</h1>
+                                                      
+                                                      
 
 
                                                       
@@ -157,16 +217,16 @@
 
 
 <div class="muzieknootjes">
-  <div class="noot-1" style="color:#fff">
+  <div class="noot-1" style="color:#000">
   &#9835; &#9833;
 </div>
-<div class="noot-2" style="color:#ffc107;">
+<div class="noot-2" style="color:#000;">
   &#9833;
 </div>
-<div class="noot-3" style="color:#fff">
+<div class="noot-3" style="color:#000">
   &#9839; &#9834;
 </div>
-<div class="noot-4" style="color:#ffc107;">
+<div class="noot-4" style="color:#000;">
   &#9834;
 </div>
 </div>
