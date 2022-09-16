@@ -9,11 +9,71 @@
      <link rel="icon" type="image/x-icon" href="../Mk-Sing/assets/media/icon.png">
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
+
+<style type="text/css">
+    
+
+    .bar{
+        background: #fff;
+    }
+
+.player {
+    width: 25.15em;
+    display: flex;
+    overflow: hidden;
+    font-size: 1.22em;
+    left: 73%;
+    flex-direction: column;
+    z-index: 999 !important;
+    background-color: white;
+    height: var(--parent-height);
+    position: absolute;
+    margin-top: -25rem;
+    background: #543b41;
+    color: #fff;
+    height: 500px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.muzieknootjes {
+    display: block;
+    position: absolute;
+    color: #fff;
+    width: 100%;
+    margin-top: -9rem;
+    min-width: 300px;
+    z-index: 99999;
+    border: 0px solid #fff;
+}
+
+button#socials i {
+    font-size: 40px;
+    color: white;
+}
+
+#main-one #socials {
+    border-radius: 6px;
+    border: none;
+    background: none;
+    width: 110px;
+    box-shadow: 0px 0px 3px 0px #fff;
+    font-weight: 700;
+    top: 50%;
+}
+body{
+    background: #d39e01;
+}
+
+
+
+</style>
+
     <body class="loading_mode">
 
 
         <div id="loading" style="position: fixed; z-index: 999999;">
-            <div id="loader" style="position: relative; background: #000;">
+        <!--     <div id="loader" style="position: relative; background: #000;">
 
             
                 <div class="loader">
@@ -24,11 +84,13 @@
                     <div class="bar5"></div>
                     <div class="bar6"></div>
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <!-- navbar -->
 
+
+  
         <div id="main-one">
             <div class="container-fluid">
                 <div class="row">
@@ -39,8 +101,8 @@
                                 
                                     <a href="index.html"><img src="assets\media\Logo3.png"></a>
 
-                                    <h2>Musical Mk</h2>
-                                    <p>Singing is the act of creating musical sounds with the voice...! Enjoy a collection of our concert snippets for me videos, Check out our youtube channel</p>
+                                    <h2>Music On</h2>
+                                   
                           <div class="bars bars2">
                                 <div class="bar"></div>
                                 <div class="bar"></div>
@@ -53,16 +115,16 @@
                                 <div class="bar"></div>
                                 <div class="bar"></div>
                             </div>
-                                   <a href="https://www.youtube.com/channel/UCGC3iir2VvHp7QquziBEnbw"> <button type="button" id="socials" class="btn btn-warning"><i class="fa fa-youtube-play" aria-hidden="true"></i></button></a>
+                                   <a href="https://www.youtube.com/channel/UCGC3iir2VvHp7QquziBEnbw"> <button type="button" id="socials" class="btn btn-warning"><i class="fa fa-music" aria-hidden="true"></i></button></a>
                                 </div>
                             </div>
-              
-                            <div class="col-sm-12 col-md-12 col-lg-8 p-0">
-                                <div class="right_bar">
+
+                            <div class="col-sm-12 col-md-12 col-lg-8 p-0" style="position: relative;">
+                                <div class="right_bar" id="Myimage" style="
+                                 background-image: url('assets/media/bpraak.jpg');background-attachment: fixed;">
                                     <nav class="navbar navbar-expand-lg navbar-light bg-light">
                                         <div class="container-fluid">
                                             <a class="navbar-brand" href="#"></a>
-
                                             <button
                                                 class="navbar-toggler"
                                                 type="button"
@@ -70,7 +132,8 @@
                                                 data-bs-target="#navbarSupportedContent"
                                                 aria-controls="navbarSupportedContent"
                                                 aria-expanded="false"
-                                                aria-label="Toggle navigation">
+                                                aria-label="Toggle navigation"
+                                            >
                                                 <span class="navbar-toggler-icon">
 
                                                     <input type="checkbox" id="manu-bars-main">
@@ -81,8 +144,9 @@
                                                     </label>
                                                 
                                             </span>
+
                                             </button>
-                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                                   <!--   <li class="nav-item">
                                                         <a class="nav-link active" aria-current="page" href="#">SINGERS</a>
@@ -99,17 +163,7 @@
                                                 </ul>
 
                                                 <div id="Navbar_Search">
-                                                    <svg style="display: none;">
-                                                        <symbol id="magnify" viewBox="0 0 18 18" height="100%" width="100%">
-                                                            <path
-                                                                d="M12.5 11h-.8l-.3-.3c1-1.1 1.6-2.6 1.6-4.2C13 2.9 10.1 0          6.5 0S0 2.9 0 6.5 2.9 13 6.5 13c1.6 0 3.1-.6 4.2-1.6l.3.3v.8l5 5          1.5-1.5-5-5zm-6 0C4 11 2 9 2 6.5S4 2 6.5 2 11 4 11 6.5 9 11 6.5            11z"
-                                                                fill="#fff"
-                                                                fill-rule="evenodd"/>
-                                                        </symbol>
-                                                     </svg>
-
-
-<!-- search -->
+                                                    <!-- search -->
 <div id="search_nav">
 <form action="">
   <input type="search" placeholder="Search here ...">
@@ -143,8 +197,8 @@
                                             <div class="banner_img_content">
                                                 <div class="col-sm-12 col-lg-12 col-sm-6">
                                                     <div class="up_img">
-                                                        <img src="assets\media\banner2.webp" />
-                                                        <h1 id="singer_title">Best of Arijit Singh Songs</h1>
+                                                      
+                                                      
 
 
                                                       
@@ -153,16 +207,16 @@
 
 
 <div class="muzieknootjes">
-  <div class="noot-1" style="color:#fff">
+  <div class="noot-1" style="color:#000">
   &#9835; &#9833;
 </div>
-<div class="noot-2" style="color:#ffc107;">
+<div class="noot-2" style="color:#000;">
   &#9833;
 </div>
-<div class="noot-3" style="color:#fff">
+<div class="noot-3" style="color:#000">
   &#9839; &#9834;
 </div>
-<div class="noot-4" style="color:#ffc107;">
+<div class="noot-4" style="color:#000;">
   &#9834;
 </div>
 </div>
@@ -183,13 +237,13 @@
                                                                 </button>
 
                                                                 <div class="slider__content">
-                                                                    <img class="img slider__img" src="https://www.pagalworld.pw/GpE34Kg9Gq/113639/150109-deva-deva-brahmastra-mp3-song-300.jpg" alt="cover" />
-                                                                    <img class="img slider__img" src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_sonymusic/music/A10301A0004860278F_20220717060457662/1658030708/srch_sonymusic_A10328E0010427685D.jpg" alt="cover" />
-                                                                    <img class="img slider__img" src="https://www.pagalworld.pw/GpE34Kg9Gq/113664/149841-kitni-haseen-hogi-arijit-singh-mp3-song-300.jpg" alt="cover" />
-                                                                    <img class="img slider__img" src="https://www.pagalworld.pw/GpE34Kg9Gq/113636/149819-phir-na-aisi-raat-aayegi-arijit-singh-mp3-song-300.jpg" alt="cover" />
-                                                                    <img class="img slider__img" src="https://www.pagalworld.pw/GpE34Kg9Gq/113604/148774-dhokha-arijit-singh-mp3-song-300.jpg" alt="cover" />
-                                                                    <img class="img slider__img" src="https://www.pagalworld.pw/GpE34Kg9Gq/113663/149901-fitoor-arijit-singh-mp3-song-300.jpg" alt="cover" />
-                                                                    <img class="img slider__img" src="https://www.pagalworld.pw/GpE34Kg9Gq/113579/146243-mere-yaaraa-sooryavanshi-mp3-song-300.jpg" alt="cover" />
+                                                                    <img class="img slider__img" src="https://www.pagalworld.pw/GpE34Kg9Gq/113558/145847-ranjha-shershaah-mp3-song-300.jpg" alt="cover" />
+                                                                    <img class="img slider__img" src="https://www.pagalworld.pw/GpE34Kg9Gq/113558/145902-mann-bharryaa-2-shershaah-mp3-song-300.jpg" alt="cover" />
+                                                                    <img class="img slider__img" src="https://www.pagalworld.pw/GpE34Kg9Gq/113514/145611-filhaal-2-mohabbat-b-praak-mp3-song-300.jpg" alt="cover" />
+                                                                    <img class="img slider__img" src="https://www.pagalworld.pw/GpE34Kg9Gq/113462/143735-kuch-bhi-ho-jaye-b-praak-mp3-song-300.jpg" alt="cover" />
+                                                                    <img class="img slider__img" src="https://www.pagalworld.pw/GpE34Kg9Gq/113604/150016-dhoke-pyaar-ke-b-praak-mp3-song-300.jpg" alt="cover" />
+                                                                    <img class="img slider__img" src="https://www.pagalworld.pw/GpE34Kg9Gq/113462/143932-dil-tod-ke-b-praak-mp3-song-300.jpg" alt="cover" />
+                                                                    <img class="img slider__img" src="https://www.pagalworld.pw/GpE34Kg9Gq/113514/145268-baarish-ki-jaaye-b-praak-mp3-song-300.jpg" alt="cover" />
                                                                 </div>
                                                             </div>
 
@@ -215,101 +269,101 @@
 
                                                         <ul class="player__playlist list">
                                                             <li class="player__song">
-                                                                <img class="player__img img" src="https://www.pagalworld.pw/GpE34Kg9Gq/113639/150109-deva-deva-brahmastra-mp3-song-300.jpg" alt="cover" />
+                                                                <img class="player__img img" src="https://www.pagalworld.pw/GpE34Kg9Gq/113558/145847-ranjha-shershaah-mp3-song-300.jpg" alt="cover" />
 
                                                                 <p class="player__context">
-                                                                    <b class="player__song-name">Deva Deva</b>
+                                                                    <b class="player__song-name">Ranjha</b>
                                                                     <span class="flex">
-                                                                        <span class="player__title">Arijit Singh</span>
+                                                                        <span class="player__title">B praak</span>
                                                                         <span class="player__song-time"></span>
                                                                     </span>
                                                                 </p>
 
-                                                                <audio class="audio" src="https://pwdown.com/113639/Deva Deva - Brahmastra.mp3"></audio>
+                                                                <audio class="audio" src="https://pwdown.com/113558/Ranjha - Shershaah.mp3"></audio>
                                                             </li>
 
                                                             <li class="player__song">
-                                                                <img class="player__img img" src="https://img.wynk.in/unsafe/248x248/filters:no_upscale():format(webp)/http://s3-ap-south-1.amazonaws.com/wynk-music-cms/srch_sonymusic/music/A10301A0004860278F_20220717060457662/1658030708/srch_sonymusic_A10328E0010427685D.jpg" alt="cover" />
+                                                                <img class="player__img img" src="https://www.pagalworld.pw/GpE34Kg9Gq/113558/145902-mann-bharryaa-2-shershaah-mp3-song-300.jpg" alt="cover" />
 
                                                                 <p class="player__context">
-                                                                    <b class="player__song-name">Kesariya</b>
+                                                                    <b class="player__song-name">Mann Bharryaa 2 </b>
                                                                     <span class="flex">
-                                                                        <span class="player__title">Arijit singh</span>
+                                                                        <span class="player__title">B praak</span>
                                                                         <span class="player__song-time"></span>
                                                                     </span>
                                                                 </p>
 
-                                                                <audio class="audio" src="https://pagalworld.com.se/files/download/id/6591"></audio>
+                                                                <audio class="audio" src="https://pwdown.com/113558/Mann Bharryaa 2 - Shershaah.mp3"></audio>
                                                             </li>
 
                                                             <li class="player__song">
-                                                                <img class="player__img img" src="https://www.pagalworld.pw/GpE34Kg9Gq/113664/149841-kitni-haseen-hogi-arijit-singh-mp3-song-300.jpg" alt="cover" />
+                                                                <img class="player__img img" src="https://www.pagalworld.pw/GpE34Kg9Gq/113514/145611-filhaal-2-mohabbat-b-praak-mp3-song-300.jpg" alt="cover" />
 
                                                                 <p class="player__context">
-                                                                    <b class="player__song-name">Kitni Haseen Hogi</b>
+                                                                    <b class="player__song-name">Filhaal 2 Mohabbat</b>
                                                                     <span class="flex">
-                                                                        <span class="player__title">Arijit Singh</span>
+                                                                        <span class="player__title">B praak</span>
                                                                         <span class="player__song-time"></span>
                                                                     </span>
                                                                 </p>
 
-                                                                <audio class="audio" src="https://pwdown.com/113664/Kitni Haseen Hogi - Arijit Singh.mp3"></audio>
+                                                                <audio class="audio" src="https://pwdown.com/113514/Filhaal 2 Mohabbat - B Praak.mp3"></audio>
                                                             </li>
 
                                                             <li class="player__song">
-                                                                <img class="player__img img" src="https://www.pagalworld.pw/GpE34Kg9Gq/113636/149819-phir-na-aisi-raat-aayegi-arijit-singh-mp3-song-300.jpg" alt="cover" />
+                                                                <img class="player__img img" src="https://www.pagalworld.pw/GpE34Kg9Gq/113462/143735-kuch-bhi-ho-jaye-b-praak-mp3-song-300.jpg" alt="cover" />
 
                                                                 <p class="player__context">
-                                                                    <b class="player__song-name">Phir Na Aisi Raat Aayegi</b>
+                                                                    <b class="player__song-name">Kuch Bhi Ho Jaye</b>
                                                                     <span class="flex">
-                                                                        <span class="player__title">Arijit Singh</span>
+                                                                        <span class="player__title">B praak</span>
                                                                         <span class="player__song-time"></span>
                                                                     </span>
                                                                 </p>
 
-                                                                <audio class="audio" src="https://pwdown.com/113636/Phir Na Aisi Raat Aayegi - Arijit Singh.mp3"></audio>
+                                                                <audio class="audio" src="https://pwdown.com/113462/Kuch Bhi Ho Jaye - B Praak.mp3"></audio>
                                                             </li>
 
                                                             <li class="player__song">
-                                                                <img class="player__img img" src="https://www.pagalworld.pw/GpE34Kg9Gq/113604/148774-dhokha-arijit-singh-mp3-song-300.jpg" alt="cover" />
+                                                                <img class="player__img img" src="https://www.pagalworld.pw/GpE34Kg9Gq/113604/150016-dhoke-pyaar-ke-b-praak-mp3-song-300.jpg" alt="cover" />
 
                                                                 <p class="player__context">
-                                                                    <b class="player__song-name">Dhokha</b>
+                                                                    <b class="player__song-name">Dhoke Pyaar Ke</b>
                                                                     <span class="flex">
-                                                                        <span class="player__title">Arijit Singh</span>
+                                                                        <span class="player__title">B praak</span>
                                                                         <span class="player__song-time"></span>
                                                                     </span>
                                                                 </p>
 
-                                                                <audio class="audio" src="https://pwdown.com/113604/Dhokha - Arijit Singh.mp3"></audio>
+                                                                <audio class="audio" src="https://pwdown.com/113604/Dhoke Pyaar Ke - B Praak.mp3"></audio>
+                                                            </li>
+
+                                                             <li class="player__song">
+                                                                <img class="player__img img" src="https://www.pagalworld.pw/GpE34Kg9Gq/113462/143932-dil-tod-ke-b-praak-mp3-song-300.jpg" alt="cover" />
+
+                                                                <p class="player__context">
+                                                                    <b class="player__song-name"> Dil Tod Ke </b>
+                                                                    <span class="flex">
+                                                                        <span class="player__title">B praak</span>
+                                                                        <span class="player__song-time"></span>
+                                                                    </span>
+                                                                </p>
+
+                                                                <audio class="audio" src="https://pwdown.com/113462/Dil Tod Ke - B Praak.mp3"></audio>
                                                             </li>
 
                                                             <li class="player__song">
-                                                                <img class="player__img img" src="https://www.pagalworld.pw/GpE34Kg9Gq/113663/149901-fitoor-arijit-singh-mp3-song-300.jpg" alt="cover" />
+                                                                <img class="player__img img" src="https://www.pagalworld.pw/GpE34Kg9Gq/113514/145268-baarish-ki-jaaye-b-praak-mp3-song-300.jpg" alt="cover" />
 
                                                                 <p class="player__context">
-                                                                    <b class="player__song-name">Fitoor </b>
+                                                                    <b class="player__song-name">Baarish Ki Jaaye <span class="uppercase"></span>
                                                                     <span class="flex">
-                                                                        <span class="player__title">Arijit Singh</span>
+                                                                        <span class="player__title">B praak</span>
                                                                         <span class="player__song-time"></span>
                                                                     </span>
                                                                 </p>
 
-                                                                <audio class="audio" src="https://pwdown.com/113663/Fitoor - Arijit Singh.mp3"></audio>
-                                                            </li>
-
-                                                            <li class="player__song">
-                                                                <img class="player__img img" src="https://www.pagalworld.pw/GpE34Kg9Gq/113579/146243-mere-yaaraa-sooryavanshi-mp3-song-300.jpg" alt="cover" />
-
-                                                                <p class="player__context">
-                                                                    <b class="player__song-name">Mere Yaaraa <span class="uppercase"></span>
-                                                                    <span class="flex">
-                                                                        <span class="player__title">Arijit Singh</span>
-                                                                        <span class="player__song-time"></span>
-                                                                    </span>
-                                                                </p>
-
-                                                                <audio class="audio" src="http://physical-authority.surge.sh/music/7.mp3"></audio>
+                                                                <audio class="audio" src="https://pwdown.com/113514/Baarish Ki Jaaye - B Praak.mp3"></audio>
                                                             </li>
                                                         </ul>
                                                     </div>
