@@ -1615,6 +1615,11 @@ span.navbar-toggler-icon i {
 
 @media screen and (min-device-width: 320px) and (max-device-width: 667px){
 
+
+div#Myimage {
+    background-attachment: inherit !important;
+    background-position: right;
+}
     .gallery {
     width: 83% !important;
     
